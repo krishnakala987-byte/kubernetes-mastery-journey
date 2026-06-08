@@ -1,0 +1,5 @@
+kubectl rollout history deployment/nginx-rolling
+
+kubectl rollout undo deployment/nginx-rolling
+
+kubectl rollout undo deployment/nginx-rolling --to-revision=1

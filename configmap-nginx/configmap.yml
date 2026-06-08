@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: nginx-html
+
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>ConfigMap Demo</title>
+    </head>
+    <body>
+      <h1>Welcome Krishna </h1>
+      <h2>ConfigMap Updated Successfully</h2>
+    </body>
+    </html>

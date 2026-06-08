@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+
+metadata:
+  name: prod-pod
+
+spec:
+  nodeSelector:
+    env: prod
+
+  containers:
+  - name: nginx
+    image: nginx
+

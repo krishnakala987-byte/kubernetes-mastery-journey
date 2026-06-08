@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+
+metadata:
+  name: file-config
+
+data:
+  app.properties: |
+    app.name=NotesApp
+    app.env=Production
+
+  database.properties: |
+    db.host=mysql
+    db.port=3306

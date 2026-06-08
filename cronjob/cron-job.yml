@@ -1,0 +1,25 @@
+apiVersion: batch/v1
+kind: CronJob
+
+metadata:
+  name: demo-cronjob
+  namespace: nginx
+
+spec:
+  schedule: "* * * * *"
+
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: busybox
+            image: busybox
+            command:
+            - sh
+            - -c
+            - |
+              echo "CronJob Running"
+              date
+
+          restartPolicy: Never

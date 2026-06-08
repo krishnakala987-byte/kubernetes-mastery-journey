@@ -1,0 +1,32 @@
+apiVersion: batch/v1
+kind: Job
+
+metadata:
+  name: demo-job
+  namespace: nginx
+
+spec:
+  completions: 10
+  parallelism: 3
+
+  template:
+    metadata:
+      labels:
+        app: batch-task
+
+    spec:
+      containers:
+      - name: batch-container
+        image: busybox:latest
+
+        command:
+        - sh
+        - -c
+        - |
+          echo "Job Started"
+          date
+          echo "Processing Data..."
+          sleep 20
+          echo "Job Completed"
+
+      restartPolicy: Never
