@@ -1,0 +1,5 @@
+apiVersion: demo.com/v1
+kind: Database
+
+metadata:
+  name: mydb

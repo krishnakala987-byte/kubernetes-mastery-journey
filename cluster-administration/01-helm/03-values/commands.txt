@@ -1,0 +1,11 @@
+helm show values bitnami/nginx
+
+vim custom-values.yml
+
+helm upgrade my-nginx bitnami/nginx -f custom-values.yml
+
+helm get values my-nginx
+
+kubectl get deployment my-nginx
+
+kubectl get svc my-nginx

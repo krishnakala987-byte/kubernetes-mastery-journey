@@ -1,0 +1,5 @@
+kubectl apply -f crd.yml
+
+kubectl get crd
+
+kubectl get databases

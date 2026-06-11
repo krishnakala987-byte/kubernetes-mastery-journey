@@ -1,0 +1,10 @@
+helm history my-nginx
+
+helm upgrade my-nginx bitnami/nginx \
+-f custom-values-v2.yml
+
+kubectl get deployment my-nginx
+
+helm rollback my-nginx 2
+
+helm history my-nginx

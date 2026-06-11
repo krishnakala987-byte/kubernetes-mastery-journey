@@ -1,0 +1,15 @@
+# No practical commands
+
+# Learned concepts:
+# CRD
+# Custom Resource
+# Operator
+# Reconciliation Loop
+
+# Related commands already executed in CRD section:
+
+kubectl get crd
+
+kubectl get databases
+
+kubectl describe database mydb

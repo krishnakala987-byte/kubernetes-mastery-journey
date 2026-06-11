@@ -1,0 +1,9 @@
+helm install my-nginx bitnami/nginx
+
+helm list
+
+kubectl get all
+
+helm get manifest my-nginx
+
+helm pull bitnami/nginx --untar

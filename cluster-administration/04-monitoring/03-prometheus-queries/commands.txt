@@ -1,0 +1,18 @@
+kubectl port-forward svc/monitoring-kube-prometheus-prometheus 9090:9090
+
+# Open
+http://localhost:9090
+
+# Queries
+
+up
+
+node_cpu_seconds_total
+
+container_memory_usage_bytes
+
+rate(container_cpu_usage_seconds_total[5m])
+
+kube_pod_info
+
+kube_node_info
