@@ -1,0 +1,14 @@
+helm repo add elastic https://helm.elastic.co
+
+helm repo update
+
+helm search repo elasticsearch
+
+helm install elasticsearch elastic/elasticsearch \
+  -f values.yaml
+
+kubectl get pods
+
+kubectl get svc
+
+kubectl get pvc

@@ -1,0 +1,7 @@
+kubectl apply -f log-generator.yml
+
+kubectl logs -f log-generator
+
+kubectl get pods
+
+kubectl get svc

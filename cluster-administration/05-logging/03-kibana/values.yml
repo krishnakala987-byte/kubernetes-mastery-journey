@@ -1,0 +1,16 @@
+elasticsearchHosts: "https://elasticsearch-master:9200"
+
+kibanaConfig:
+  kibana.yml: |
+    elasticsearch.serviceAccountToken: "AAEAAWVsYXN0aWMva2liYW5hL2tpYmFuYS1raWJhbmE6RW82UUVmMGZTOE8zMG10MFpOd2hYdw"
+    elasticsearch.ssl.verificationMode: none
+    xpack.security.encryptionKey: "min32characterslongencryptionkey1234"
+    xpack.encryptedSavedObjects.encryptionKey: "min32characterslongencryptionkey1234"
+
+resources:
+  requests:
+    cpu: "100m"
+    memory: "512Mi"
+  limits:
+    cpu: "500m"
+    memory: "1Gi"

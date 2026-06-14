@@ -1,0 +1,9 @@
+helm search repo kibana
+
+helm install kibana elastic/kibana
+
+kubectl get pods
+
+kubectl get svc
+
+kubectl port-forward svc/kibana-kibana 5601:5601
